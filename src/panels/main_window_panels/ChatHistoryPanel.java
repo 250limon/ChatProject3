@@ -51,8 +51,12 @@ public class ChatHistoryPanel extends JPanel {
             chatMessageArea.setPreferredSize(new Dimension(300, 70*chatMessagePanels.size()));
         }
         //初始化为第一个朋友
-        ChatFriendPanel.getInstance().init(User.getInstance().getFriends().get(0));
-        ChatFriendTitle.getInstance().init(User.getInstance().getFriends().get(0));
+        if(!User.getInstance().getFriends().isEmpty())
+        {
+            ChatFriendPanel.getInstance().init(User.getInstance().getFriends().get(0));
+            ChatFriendTitle.getInstance().init(User.getInstance().getFriends().get(0));
+        }
+
 
 
 

@@ -9,6 +9,7 @@ public class Friend extends People {
     private int importance;//朋友的重要性
     private boolean isLive=false;//朋友是否上线
 
+
     public int getId() {
         return id;
     }

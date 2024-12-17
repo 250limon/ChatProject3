@@ -1,5 +1,8 @@
 package panels.main_content_panel;
 
+import buttons.FriendButton;
+import buttons.SettingButton;
+
 import javax.swing.*;
 import java.awt.*;
 //好友列表查看，添加，删除界面
@@ -9,6 +12,7 @@ public class MyFriendPanel extends JPanel {
     {
         setBackground(Color.YELLOW);
 
+       setLayout(null);
 
 
     }

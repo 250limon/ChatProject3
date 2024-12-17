@@ -21,6 +21,7 @@ public class LogInPanel extends JPanel {
         inputId.setBounds(100,200,400,30);
         add(inputPassword);
         inputPassword.setBounds(100,300,400,30);
+
     }
     public static LogInPanel getInstance()
     {

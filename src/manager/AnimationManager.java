@@ -172,7 +172,7 @@ public class AnimationManager {
 
     }
     //panel从一个位置竖直向上移动到另一位置
-  synchronized   public void jpanelUpMoveTo(JPanel jPanel,int y,int v)
+     public void jpanelUpMoveTo(JPanel jPanel,int y,int v)
     {
         new Thread(()->{
             while(true)
@@ -202,7 +202,7 @@ public class AnimationManager {
 
     }
     //panel从一个位置水平向右移动到另一位置
-  synchronized   public void jframeRightMoveTo(JFrame jFrame,int x,int v)
+   public void jframeRightMoveTo(JFrame jFrame,int x,int v)
     {
         new Thread(()->{
 

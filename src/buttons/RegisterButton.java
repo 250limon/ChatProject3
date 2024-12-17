@@ -4,6 +4,7 @@ import database.FriendDAO;
 import database.UserDAO;
 import frames.LogInJFrame;
 import frames.MainWindow;
+import panels.MainWindowPanel;
 import panels.panel_login.LogInPanel;
 import user.User;
 import utils.PhoneTools;
@@ -28,6 +29,7 @@ public class RegisterButton extends Button {
                 FriendDAO.getInstance().setFriends();//设置好友的列表，此时为新注册的用户，好友列表应为空
                 MainWindow.getInstance().setVisible(true);
                 LogInJFrame.getInstance().setVisible(false);
+                MainWindowPanel.getInstance().init();
 
                 PhoneTools.getInstance().receiveMessage();//接收信息
 

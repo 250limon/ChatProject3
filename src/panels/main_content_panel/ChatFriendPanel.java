@@ -18,6 +18,7 @@ public class ChatFriendPanel extends JPanel {
     {
        setBackground(Color.GRAY);
        setLayout(null);
+
     }
     public static ChatFriendPanel getInstance()
     {

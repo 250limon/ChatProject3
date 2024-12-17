@@ -27,9 +27,11 @@ public class ChatFriendTitle extends JPanel {
 
         g.setColor(Color.WHITE);
         g.fillRect(0,0,getWidth(),getHeight());
+        if(friend!=null)
         g.drawImage(friend.getImage(), getWidth()/2-100,0,50,50,this);
         g.setFont(new Font(Font.SERIF,Font.BOLD,23));
         g.setColor(Color.BLACK);
+        if(friend!=null)
         g.drawString(friend.getName(),getWidth()/2-30,25);
 
 
